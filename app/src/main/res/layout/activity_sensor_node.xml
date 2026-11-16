@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NODO SENSOR (INVERNADERO)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvConexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciando..."
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvHumedadActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humedad del Suelo: 45%"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/sbHumedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="45"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riego automático si la humedad baja de 30%"
+        android:textSize="13sp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvEstadoBomba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESTADO BOMBA: APAGADA"
+        android:textColor="#C62828"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</LinearLayout>
